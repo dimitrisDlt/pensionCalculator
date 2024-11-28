@@ -196,7 +196,7 @@ Rectangle
                     }
 
 
-                    buttonLabel: "ΕΙΣΟΔΟΣ"
+                    buttonLabel: "LOGIN"
                 }
             }
 
