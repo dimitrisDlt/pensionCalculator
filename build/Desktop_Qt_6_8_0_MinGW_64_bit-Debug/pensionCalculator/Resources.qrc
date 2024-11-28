@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/money-bills-solid.svg</file>
+        <file>assets/key-solid.svg</file>
+    </qresource>
+</RCC>

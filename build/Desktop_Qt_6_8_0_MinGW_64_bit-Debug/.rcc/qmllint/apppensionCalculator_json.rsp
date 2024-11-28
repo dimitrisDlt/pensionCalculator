@@ -1,0 +1,16 @@
+--bare
+-I
+C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug
+-I
+C:/Qt/6.8.0/mingw_64/qml
+--resource
+C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/qmake_pensionCalculator.qrc
+--resource
+C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/apppensionCalculator_raw_qml_0.qrc
+C:/Users/dalet/Documents/pensionCalculator/Main.qml
+C:/Users/dalet/Documents/pensionCalculator/LoginPage.qml
+C:/Users/dalet/Documents/pensionCalculator/MyInput.qml
+C:/Users/dalet/Documents/pensionCalculator/MyButton.qml
+C:/Users/dalet/Documents/pensionCalculator/Footer.qml
+--json
+C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/apppensionCalculator_qmllint.json

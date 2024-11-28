@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="/qt/qml/pensionCalculator/">
+    <file alias="Main.qml">C:/Users/dalet/Documents/pensionCalculator/Main.qml</file>
+    <file alias="LoginPage.qml">C:/Users/dalet/Documents/pensionCalculator/LoginPage.qml</file>
+    <file alias="MyInput.qml">C:/Users/dalet/Documents/pensionCalculator/MyInput.qml</file>
+    <file alias="MyButton.qml">C:/Users/dalet/Documents/pensionCalculator/MyButton.qml</file>
+    <file alias="Footer.qml">C:/Users/dalet/Documents/pensionCalculator/Footer.qml</file>
+    <file alias="Resources.qrc">C:/Users/dalet/Documents/pensionCalculator/Resources.qrc</file>
+  </qresource>
+</RCC>
+
