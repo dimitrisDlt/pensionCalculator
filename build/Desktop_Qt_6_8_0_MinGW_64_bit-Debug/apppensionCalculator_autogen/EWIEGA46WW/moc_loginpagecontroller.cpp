@@ -39,7 +39,8 @@ constexpr auto qt_meta_stringdata_CLASSLoginPageControllerENDCLASS = QtMocHelper
     "QML.Element",
     "auto",
     "onLoginButtonClicked",
-    ""
+    "",
+    "attemptedPassword"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -63,10 +64,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSLoginPageControllerENDCLASS[] = 
        1,    2,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    0,   22,    4, 0x09,    1 /* Protected */,
+       3,    1,   22,    4, 0x09,    1 /* Protected */,
 
  // slots: parameters
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    5,
 
        0        // eod
 };
@@ -81,7 +82,8 @@ Q_CONSTINIT const QMetaObject LoginPageController::staticMetaObject = { {
         // Q_OBJECT / Q_GADGET
         LoginPageController,
         // method 'onLoginButtonClicked'
-        void
+        void,
+        QString
     >,
     nullptr
 } };
@@ -92,11 +94,10 @@ void LoginPageController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         auto *_t = static_cast<LoginPageController *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->onLoginButtonClicked(); break;
+        case 0: _t->onLoginButtonClicked((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *LoginPageController::metaObject() const

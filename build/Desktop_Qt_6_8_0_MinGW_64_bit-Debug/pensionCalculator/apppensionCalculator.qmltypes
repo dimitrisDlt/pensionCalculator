@@ -21,6 +21,9 @@ Module {
         prototype: "QObject"
         exports: ["pensionCalculator/LoginPageController 1.0"]
         exportMetaObjectRevisions: [256]
-        Method { name: "onLoginButtonClicked" }
+        Method {
+            name: "onLoginButtonClicked"
+            Parameter { name: "attemptedPassword"; type: "QString" }
+        }
     }
 }

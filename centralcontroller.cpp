@@ -1,3 +1,3 @@
 #include "centralcontroller.h"
 
-CentralController::CentralController() {}
+CentralController::CentralController(QObject *parent) {}

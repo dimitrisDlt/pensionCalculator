@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 23,
-                        "durationMicroseconds": 1,
+                        "durationMicroseconds": 2,
                         "errorMessage": "Cannot resolve property type  for binding on fill.",
                         "functionName": "fill",
                         "line": 14

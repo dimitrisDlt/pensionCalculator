@@ -14,6 +14,12 @@
             "slots": [
                 {
                     "access": "protected",
+                    "arguments": [
+                        {
+                            "name": "attemptedPassword",
+                            "type": "QString"
+                        }
+                    ],
                     "index": 0,
                     "name": "onLoginButtonClicked",
                     "returnType": "void"

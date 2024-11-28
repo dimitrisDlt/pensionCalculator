@@ -10,11 +10,12 @@ class LoginPageController : public QObject
     QML_ELEMENT
 
 public:
-    LoginPageController();
+    explicit LoginPageController(QObject *parent = nullptr);
 protected slots:
-    void onLoginButtonClicked();
+    void onLoginButtonClicked(QString attemptedPassword);
 private:
-
+    QString password;
+    bool isPasswordCorrect;
 };
 
 #endif // LOGINPAGECONTROLLER_H

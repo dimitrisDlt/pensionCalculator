@@ -10,7 +10,7 @@ class CentralController : public QObject
     Q_OBJECT
     QML_ELEMENT
 public:
-    CentralController();
+    explicit CentralController(QObject *parent = nullptr);
 protected:
     LoginPageController loginPageController;
 };

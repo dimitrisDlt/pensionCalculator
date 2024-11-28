@@ -150,7 +150,7 @@ Rectangle
 
             MyInput
             {
-
+                id: passwordInput
                 Layout.alignment: Qt.AlignHCenter
                 source: "qrc:/assets/key-solid.svg"
             }
@@ -195,6 +195,11 @@ Rectangle
                         verticalCenter: parent.verticalCenter
                     }
 
+                    onClicked:
+                    {
+                        loginPageController.onLoginButtonClicked(passwordInput.text)
+
+                    }
 
                     buttonLabel: "LOGIN"
                 }

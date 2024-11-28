@@ -7,6 +7,7 @@ Rectangle
     property string source
     property color insideColor: "#E9EFEC"
     property color textColor: "#16423C"
+    property string text: textInput.text
 
     height: 40
     width: 200
@@ -127,6 +128,7 @@ Rectangle
 
             TextInput
             {
+                id: textInput
                 anchors
                 {
                     top: parent.top
