@@ -1,0 +1,14 @@
+-rootPath
+/home/dimitris/dev/cpp/pensionCalculator
+-cmake-output
+-output-file
+/home/dimitris/dev/cpp/pensionCalculator/build/Desktop_Qt_6_8_0-Debug/.qt/qml_imports/apppensionCalculator_build.cmake
+-importPath
+/home/dimitris/dev/cpp/pensionCalculator/build/Desktop_Qt_6_8_0-Debug/pensionCalculator
+-importPath
+/home/dimitris/dev/cpp/pensionCalculator/build/Desktop_Qt_6_8_0-Debug
+-importPath
+/home/dimitris/Qt/6.8.0/gcc_64/qml
+-qrcFiles
+/home/dimitris/dev/cpp/pensionCalculator/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/qmake_pensionCalculator.qrc
+/home/dimitris/dev/cpp/pensionCalculator/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/apppensionCalculator_raw_qml_0.qrc

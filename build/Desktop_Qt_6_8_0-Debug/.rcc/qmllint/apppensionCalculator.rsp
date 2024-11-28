@@ -1,0 +1,14 @@
+--bare
+-I
+/home/dimitris/dev/cpp/pensionCalculator/build/Desktop_Qt_6_8_0-Debug
+-I
+/home/dimitris/Qt/6.8.0/gcc_64/qml
+--resource
+/home/dimitris/dev/cpp/pensionCalculator/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/qmake_pensionCalculator.qrc
+--resource
+/home/dimitris/dev/cpp/pensionCalculator/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/apppensionCalculator_raw_qml_0.qrc
+/home/dimitris/dev/cpp/pensionCalculator/Main.qml
+/home/dimitris/dev/cpp/pensionCalculator/LoginPage.qml
+/home/dimitris/dev/cpp/pensionCalculator/MyInput.qml
+/home/dimitris/dev/cpp/pensionCalculator/MyButton.qml
+/home/dimitris/dev/cpp/pensionCalculator/Footer.qml

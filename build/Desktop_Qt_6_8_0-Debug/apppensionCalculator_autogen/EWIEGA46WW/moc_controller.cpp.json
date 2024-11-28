@@ -1,0 +1,26 @@
+{
+    "classes": [
+        {
+            "className": "controller",
+            "lineNumber": 6,
+            "object": true,
+            "qualifiedClassName": "controller",
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "onButtonClicked",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "controller.h",
+    "outputRevision": 68
+}

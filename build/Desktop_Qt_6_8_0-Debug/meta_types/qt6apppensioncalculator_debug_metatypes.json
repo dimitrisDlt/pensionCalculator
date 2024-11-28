@@ -1,0 +1,58 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "CentralController",
+                "lineNumber": 8,
+                "object": true,
+                "qualifiedClassName": "CentralController",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "centralcontroller.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "LoginPageController",
+                "lineNumber": 7,
+                "object": true,
+                "qualifiedClassName": "LoginPageController",
+                "slots": [
+                    {
+                        "access": "protected",
+                        "index": 0,
+                        "name": "onLoginButtonClicked",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "loginpagecontroller.h",
+        "outputRevision": 68
+    }
+]
