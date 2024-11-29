@@ -5,6 +5,7 @@ import QtQuick.Controls
 
 Rectangle
 {
+    property bool ready: loginPageController.readyToContinue
     id: loginPage
     anchors.fill: parent
     color: "#E9EFEC"
@@ -195,13 +196,15 @@ Rectangle
                         verticalCenter: parent.verticalCenter
                     }
 
+
+
                     onClicked:
                     {
                         loginPageController.onLoginButtonClicked(passwordInput.text)
 
                     }
 
-                    buttonLabel: "LOGIN"
+                    buttonLabel: "ΕΙΣΟΔΟΣ"
                 }
             }
 

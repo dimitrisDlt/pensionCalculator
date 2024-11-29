@@ -27,6 +27,11 @@ qt_add_qml_module(apppensionCalculator
         QML_FILES Footer.qml
         SOURCES centralcontroller.h centralcontroller.cpp
         SOURCES loginpagecontroller.h loginpagecontroller.cpp
+        QML_FILES Test.qml
+        QML_FILES BasicChoicePage.qml
+        QML_FILES Header.qml
+        QML_FILES PageMain.qml
+        QML_FILES AppContainer.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

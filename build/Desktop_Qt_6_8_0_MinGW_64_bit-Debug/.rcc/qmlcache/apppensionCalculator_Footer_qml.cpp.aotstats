@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 440,
+                        "durationMicroseconds": 518,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 12
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 243,
+                        "durationMicroseconds": 255,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 22
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 184,
+                        "durationMicroseconds": 183,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 36

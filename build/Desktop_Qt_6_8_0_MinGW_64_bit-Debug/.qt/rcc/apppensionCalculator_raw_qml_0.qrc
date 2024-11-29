@@ -5,6 +5,11 @@
     <file alias="MyInput.qml">C:/Users/dalet/Documents/pensionCalculator/MyInput.qml</file>
     <file alias="MyButton.qml">C:/Users/dalet/Documents/pensionCalculator/MyButton.qml</file>
     <file alias="Footer.qml">C:/Users/dalet/Documents/pensionCalculator/Footer.qml</file>
+    <file alias="Test.qml">C:/Users/dalet/Documents/pensionCalculator/Test.qml</file>
+    <file alias="BasicChoicePage.qml">C:/Users/dalet/Documents/pensionCalculator/BasicChoicePage.qml</file>
+    <file alias="Header.qml">C:/Users/dalet/Documents/pensionCalculator/Header.qml</file>
+    <file alias="PageMain.qml">C:/Users/dalet/Documents/pensionCalculator/PageMain.qml</file>
+    <file alias="AppContainer.qml">C:/Users/dalet/Documents/pensionCalculator/AppContainer.qml</file>
     <file alias="Resources.qrc">C:/Users/dalet/Documents/pensionCalculator/Resources.qrc</file>
   </qresource>
 </RCC>

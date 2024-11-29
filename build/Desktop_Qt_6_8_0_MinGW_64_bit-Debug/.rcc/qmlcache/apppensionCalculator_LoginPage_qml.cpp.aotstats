@@ -4,212 +4,220 @@
             {
                 "entries": [
                     {
+                        "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 496,
+                        "errorMessage": "Cannot access value for name loginPageController",
+                        "functionName": "ready",
+                        "line": 8
+                    },
+                    {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 407,
+                        "durationMicroseconds": 299,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 9
+                        "line": 10
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 18,
-                        "durationMicroseconds": 289,
+                        "durationMicroseconds": 305,
                         "errorMessage": "",
                         "functionName": "top",
-                        "line": 17
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 21,
-                        "durationMicroseconds": 237,
-                        "errorMessage": "",
-                        "functionName": "bottom",
                         "line": 18
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 19,
-                        "durationMicroseconds": 228,
+                        "column": 21,
+                        "durationMicroseconds": 252,
                         "errorMessage": "",
-                        "functionName": "left",
+                        "functionName": "bottom",
                         "line": 19
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 22,
-                        "durationMicroseconds": 304,
+                        "column": 19,
+                        "durationMicroseconds": 288,
                         "errorMessage": "",
-                        "functionName": "top",
-                        "line": 42
+                        "functionName": "left",
+                        "line": 20
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 213,
+                        "column": 22,
+                        "durationMicroseconds": 296,
                         "errorMessage": "",
-                        "functionName": "horizontalCenter",
+                        "functionName": "top",
                         "line": 43
                     },
                     {
                         "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 339,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 44
+                    },
+                    {
+                        "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 195,
+                        "durationMicroseconds": 194,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
-                        "line": 67
+                        "line": 68
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 233,
+                        "durationMicroseconds": 278,
                         "errorMessage": "",
                         "functionName": "top",
-                        "line": 56
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 24,
-                        "durationMicroseconds": 275,
-                        "errorMessage": "",
-                        "functionName": "right",
                         "line": 57
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 261,
+                        "column": 24,
+                        "durationMicroseconds": 285,
                         "errorMessage": "",
-                        "functionName": "left",
+                        "functionName": "right",
                         "line": 58
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 34,
-                        "durationMicroseconds": 180,
+                        "column": 23,
+                        "durationMicroseconds": 252,
                         "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 84
+                        "functionName": "left",
+                        "line": 59
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 188,
+                        "column": 34,
+                        "durationMicroseconds": 202,
                         "errorMessage": "",
-                        "functionName": "wrapMode",
+                        "functionName": "horizontalAlignment",
                         "line": 85
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 22,
-                        "durationMicroseconds": 250,
+                        "column": 23,
+                        "durationMicroseconds": 183,
                         "errorMessage": "",
-                        "functionName": "top",
-                        "line": 74
+                        "functionName": "wrapMode",
+                        "line": 86
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 24,
-                        "durationMicroseconds": 248,
+                        "column": 22,
+                        "durationMicroseconds": 324,
                         "errorMessage": "",
-                        "functionName": "right",
+                        "functionName": "top",
                         "line": 75
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 822,
+                        "column": 24,
+                        "durationMicroseconds": 378,
                         "errorMessage": "",
-                        "functionName": "left",
+                        "functionName": "right",
                         "line": 76
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 18,
-                        "durationMicroseconds": 342,
+                        "column": 23,
+                        "durationMicroseconds": 309,
                         "errorMessage": "",
-                        "functionName": "top",
-                        "line": 95
+                        "functionName": "left",
+                        "line": 77
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 21,
-                        "durationMicroseconds": 293,
+                        "column": 18,
+                        "durationMicroseconds": 558,
                         "errorMessage": "",
-                        "functionName": "bottom",
+                        "functionName": "top",
                         "line": 96
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 20,
-                        "durationMicroseconds": 267,
+                        "column": 21,
+                        "durationMicroseconds": 328,
                         "errorMessage": "",
-                        "functionName": "right",
+                        "functionName": "bottom",
                         "line": 97
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 19,
-                        "durationMicroseconds": 269,
+                        "column": 20,
+                        "durationMicroseconds": 304,
                         "errorMessage": "",
-                        "functionName": "left",
+                        "functionName": "right",
                         "line": 98
                     },
                     {
                         "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 322,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 99
+                    },
+                    {
+                        "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 163,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 105
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 38,
-                        "durationMicroseconds": 267,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 133
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 38,
                         "durationMicroseconds": 216,
                         "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 106
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 38,
+                        "durationMicroseconds": 244,
+                        "errorMessage": "",
                         "functionName": "horizontalAlignment",
-                        "line": 148
+                        "line": 134
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 38,
+                        "durationMicroseconds": 239,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 149
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 257,
+                        "durationMicroseconds": 217,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 154
+                        "line": 155
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "durationMicroseconds": 954,
+                        "errorMessage": "Cannot access value for name loginPageController",
                         "functionName": "onClicked",
-                        "line": 199
+                        "line": 202
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on right.",
+                        "durationMicroseconds": 643,
+                        "errorMessage": "",
                         "functionName": "right",
-                        "line": 193
+                        "line": 194
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on verticalCenter.",
+                        "durationMicroseconds": 276,
+                        "errorMessage": "",
                         "functionName": "verticalCenter",
-                        "line": 195
+                        "line": 196
                     }
                 ],
                 "filepath": "C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/LoginPage.qml"

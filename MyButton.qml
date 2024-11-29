@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Effects
+import QtQuick.Controls.Material
 
 Button
 {
@@ -11,7 +12,7 @@ Button
 
     id: myButton
     width: 200
-    height: 40
+    height: 55
     text: buttonLabel
     layer.enabled: true
     layer.effect: MultiEffect
@@ -20,6 +21,9 @@ Button
         shadowBlur: 0.8
         shadowColor: "black"
     }
+
+    Material.theme: Material.Dark
+    Material.accent: Material.Purple
 
     ParallelAnimation
     {
@@ -86,6 +90,7 @@ Button
     }
     MouseArea
     {
+        id: mouseArea
         anchors.fill: parent
         hoverEnabled: true
 
@@ -98,7 +103,13 @@ Button
         {
             parallelAnimationExit.start()
         }
+
+        onClicked:
+        {
+            myButton.clicked()
+        }
     }
+
 
     contentItem: Text
     {

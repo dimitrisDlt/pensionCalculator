@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     LoginPageController *loginPageController = new LoginPageController(&app);
-    engine.rootContext()->setContextProperty("centralController", loginPageController);
+    engine.rootContext()->setContextProperty("loginPageController", loginPageController);
 
     QObject::connect(
         &engine,

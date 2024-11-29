@@ -1,5 +1,5 @@
 import QtQuick
-import QtQuick.Controls
+import QtQuick.Layouts
 
 Window
 {
@@ -8,14 +8,8 @@ Window
     visible: true
     title: qsTr("Pension Calculator")
 
-    StackView
+    AppContainer
     {
-        id: stack
-        anchors.fill: parent
 
-        LoginPage
-        {
-
-        }
     }
 }

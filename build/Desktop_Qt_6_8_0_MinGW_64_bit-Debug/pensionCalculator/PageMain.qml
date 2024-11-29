@@ -1,0 +1,11 @@
+import QtQuick
+import QtQuick.Layouts
+
+Rectangle
+{
+    Layout.fillHeight: true
+    Layout.fillWidth: true
+
+    color: "transparent"
+
+}

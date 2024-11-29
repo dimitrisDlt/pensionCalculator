@@ -4,132 +4,156 @@
             {
                 "entries": [
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessfull": true,
                         "column": 11,
-                        "durationMicroseconds": 2,
-                        "errorMessage": "Cannot resolve property type  for binding on text.",
+                        "durationMicroseconds": 367,
+                        "errorMessage": "",
                         "functionName": "text",
-                        "line": 15
+                        "line": 16
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 135,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: myButton",
-                        "functionName": "target",
-                        "line": 31
+                        "durationMicroseconds": 246,
+                        "errorMessage": "",
+                        "functionName": "theme",
+                        "line": 25
                     },
                     {
-                        "codegenSuccessfull": false,
-                        "column": 21,
-                        "durationMicroseconds": 44,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: myButton",
-                        "functionName": "target",
-                        "line": 40
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 238,
+                        "errorMessage": "",
+                        "functionName": "accent",
+                        "line": 26
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 100,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: myButton",
+                        "durationMicroseconds": 195,
+                        "errorMessage": "",
                         "functionName": "target",
-                        "line": 49
+                        "line": 35
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 39,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: myButton",
+                        "durationMicroseconds": 161,
+                        "errorMessage": "",
                         "functionName": "target",
-                        "line": 63
+                        "line": 44
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 41,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: myButton",
+                        "durationMicroseconds": 178,
+                        "errorMessage": "",
                         "functionName": "target",
-                        "line": 72
+                        "line": 53
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 42,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: myButton",
+                        "durationMicroseconds": 162,
+                        "errorMessage": "",
                         "functionName": "target",
-                        "line": 81
+                        "line": 67
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 175,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 76
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 173,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 85
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 9,
-                        "durationMicroseconds": 520,
+                        "durationMicroseconds": 389,
                         "errorMessage": "",
                         "functionName": "onEntered",
-                        "line": 93
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 9,
-                        "durationMicroseconds": 280,
-                        "errorMessage": "",
-                        "functionName": "onExited",
                         "line": 98
                     },
                     {
                         "codegenSuccessfull": true,
+                        "column": 9,
+                        "durationMicroseconds": 329,
+                        "errorMessage": "",
+                        "functionName": "onExited",
+                        "line": 103
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 9,
+                        "durationMicroseconds": 306,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 108
+                    },
+                    {
+                        "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 204,
+                        "durationMicroseconds": 179,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 89
+                        "line": 94
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessfull": true,
                         "column": 15,
-                        "durationMicroseconds": 52,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: myButton",
+                        "durationMicroseconds": 192,
+                        "errorMessage": "",
                         "functionName": "text",
-                        "line": 105
+                        "line": 116
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 37,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: myButton",
+                        "durationMicroseconds": 278,
+                        "errorMessage": "",
                         "functionName": "color",
-                        "line": 106
+                        "line": 117
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 229,
+                        "durationMicroseconds": 221,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
-                        "line": 107
+                        "line": 118
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 337,
+                        "durationMicroseconds": 185,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
-                        "line": 108
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 16,
-                        "durationMicroseconds": 131,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: myButton",
-                        "functionName": "color",
                         "line": 119
                     },
                     {
-                        "codegenSuccessfull": false,
-                        "column": 23,
-                        "durationMicroseconds": 47,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: myButton",
+                        "codegenSuccessfull": true,
+                        "column": 16,
+                        "durationMicroseconds": 230,
+                        "errorMessage": "",
                         "functionName": "color",
-                        "line": 120
+                        "line": 130
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 223,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 131
                     }
                 ],
                 "filepath": "C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyButton.qml"

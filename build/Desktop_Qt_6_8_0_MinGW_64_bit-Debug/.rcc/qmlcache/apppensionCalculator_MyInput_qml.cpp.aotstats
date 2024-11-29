@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 484,
+                        "durationMicroseconds": 514,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 10
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 155,
+                        "durationMicroseconds": 185,
                         "errorMessage": "",
                         "functionName": "target",
                         "line": 23
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 153,
+                        "durationMicroseconds": 175,
                         "errorMessage": "",
                         "functionName": "target",
                         "line": 33
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 166,
+                        "durationMicroseconds": 167,
                         "errorMessage": "",
                         "functionName": "target",
                         "line": 47
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 333,
+                        "durationMicroseconds": 162,
                         "errorMessage": "",
                         "functionName": "target",
                         "line": 57
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 249,
+                        "durationMicroseconds": 439,
                         "errorMessage": "Cannot load property source from (component in C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyInput.qml)::parent with type QQuickItem.",
                         "functionName": "source",
                         "line": 65
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 37,
-                        "durationMicroseconds": 136,
+                        "durationMicroseconds": 710,
                         "errorMessage": "Cannot load property insideColor from (component in C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyInput.qml)::parent with type QQuickItem.",
                         "functionName": "insideColor",
                         "line": 66
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 181,
                         "errorMessage": "Cannot load property textColor from (component in C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyInput.qml)::parent with type QQuickItem.",
                         "functionName": "textColor",
                         "line": 67
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 9,
-                        "durationMicroseconds": 426,
+                        "durationMicroseconds": 511,
                         "errorMessage": "",
                         "functionName": "onEntered",
                         "line": 74
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 9,
-                        "durationMicroseconds": 278,
+                        "durationMicroseconds": 311,
                         "errorMessage": "",
                         "functionName": "onExited",
                         "line": 79
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 187,
+                        "durationMicroseconds": 182,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 70
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 37,
-                        "durationMicroseconds": 148,
+                        "durationMicroseconds": 164,
                         "errorMessage": "Cannot load property source from (component in C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyInput.qml)::parent with type QQuickItem.",
                         "functionName": "source",
                         "line": 85
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 41,
-                        "durationMicroseconds": 136,
+                        "durationMicroseconds": 143,
                         "errorMessage": "Cannot load property insideColor from (component in C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyInput.qml)::parent with type QQuickItem.",
                         "functionName": "insideColor",
                         "line": 86
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 138,
+                        "durationMicroseconds": 121,
                         "errorMessage": "Cannot load property textColor from (component in C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyInput.qml)::parent with type QQuickItem.",
                         "functionName": "textColor",
                         "line": 87
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 266,
+                        "durationMicroseconds": 282,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 100
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 288,
+                        "durationMicroseconds": 401,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 93
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 280,
+                        "durationMicroseconds": 300,
                         "errorMessage": "",
                         "functionName": "bottom",
                         "line": 94
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 303,
+                        "durationMicroseconds": 281,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 95
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 261,
+                        "durationMicroseconds": 330,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 96
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 42,
-                        "durationMicroseconds": 162,
+                        "durationMicroseconds": 203,
                         "errorMessage": "Cannot load property textColor from (component in C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyInput.qml)::parent with type QQuickItem.",
                         "functionName": "imgColor",
                         "line": 104
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 124,
+                        "durationMicroseconds": 122,
                         "errorMessage": "Cannot load property source from (component in C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyInput.qml)::parent with type QQuickItem.",
                         "functionName": "source",
                         "line": 114
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 153,
+                        "durationMicroseconds": 129,
                         "errorMessage": "Cannot load property source from (component in C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyInput.qml)::parent with type QQuickItem.",
                         "functionName": "visible",
                         "line": 116
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 303,
+                        "durationMicroseconds": 368,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 108
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 30,
-                        "durationMicroseconds": 265,
+                        "durationMicroseconds": 300,
                         "errorMessage": "",
                         "functionName": "bottom",
                         "line": 109
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 280,
+                        "durationMicroseconds": 393,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 110
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 224,
+                        "durationMicroseconds": 239,
                         "errorMessage": "",
                         "functionName": "source",
                         "line": 121
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 40,
-                        "durationMicroseconds": 325,
+                        "durationMicroseconds": 296,
                         "errorMessage": "",
                         "functionName": "colorizationColor",
                         "line": 124
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 188,
+                        "durationMicroseconds": 200,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 120
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 177,
+                        "durationMicroseconds": 194,
                         "errorMessage": "Cannot load property textColor from (component in C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyInput.qml)::parent with type QQuickItem.",
                         "functionName": "color",
                         "line": 141
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 486,
+                        "durationMicroseconds": 318,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 134
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 305,
+                        "durationMicroseconds": 634,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 136
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 141,
+                        "durationMicroseconds": 157,
                         "errorMessage": "Cannot load property source from (component in C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MyInput.qml)::parent with type QQuickItem.",
                         "functionName": "left",
                         "line": 137

@@ -21,6 +21,15 @@ Module {
         prototype: "QObject"
         exports: ["pensionCalculator/LoginPageController 1.0"]
         exportMetaObjectRevisions: [256]
+        Property {
+            name: "readyToContinue"
+            type: "bool"
+            read: "readyToContinue"
+            write: "setReadyToContinue"
+            notify: "readyToContinueChanged"
+            index: 0
+        }
+        Signal { name: "readyToContinueChanged" }
         Method {
             name: "onLoginButtonClicked"
             Parameter { name: "attemptedPassword"; type: "QString" }

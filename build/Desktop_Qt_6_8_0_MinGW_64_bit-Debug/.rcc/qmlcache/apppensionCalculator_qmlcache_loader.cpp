@@ -40,6 +40,41 @@ namespace _qt_qml_pensionCalculator_Footer_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_pensionCalculator_Test_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_pensionCalculator_BasicChoicePage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_pensionCalculator_Header_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_pensionCalculator_PageMain_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_pensionCalculator_AppContainer_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -59,6 +94,11 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/pensionCalculator/MyInput.qml"), &QmlCacheGeneratedCode::_qt_qml_pensionCalculator_MyInput_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/pensionCalculator/MyButton.qml"), &QmlCacheGeneratedCode::_qt_qml_pensionCalculator_MyButton_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/pensionCalculator/Footer.qml"), &QmlCacheGeneratedCode::_qt_qml_pensionCalculator_Footer_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/pensionCalculator/Test.qml"), &QmlCacheGeneratedCode::_qt_qml_pensionCalculator_Test_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/pensionCalculator/BasicChoicePage.qml"), &QmlCacheGeneratedCode::_qt_qml_pensionCalculator_BasicChoicePage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/pensionCalculator/Header.qml"), &QmlCacheGeneratedCode::_qt_qml_pensionCalculator_Header_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/pensionCalculator/PageMain.qml"), &QmlCacheGeneratedCode::_qt_qml_pensionCalculator_PageMain_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/pensionCalculator/AppContainer.qml"), &QmlCacheGeneratedCode::_qt_qml_pensionCalculator_AppContainer_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

@@ -1,0 +1,44 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 15,
+                        "durationMicroseconds": 480,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 26
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 30,
+                        "durationMicroseconds": 249,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 33
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 193,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 34
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 161,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 25
+                    }
+                ],
+                "filepath": "C:/Users/dalet/Documents/pensionCalculator/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Header.qml"
+            }
+        ],
+        "moduleId": "pensionCalculator(apppensionCalculator)"
+    }
+]

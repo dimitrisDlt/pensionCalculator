@@ -10,17 +10,42 @@
             "className": "LoginPageController",
             "lineNumber": 7,
             "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "readyToContinue",
+                    "notify": "readyToContinueChanged",
+                    "read": "readyToContinue",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setReadyToContinue"
+                }
+            ],
             "qualifiedClassName": "LoginPageController",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "readyToContinueChanged",
+                    "returnType": "void"
+                }
+            ],
             "slots": [
                 {
-                    "access": "protected",
+                    "access": "public",
                     "arguments": [
                         {
                             "name": "attemptedPassword",
                             "type": "QString"
                         }
                     ],
-                    "index": 0,
+                    "index": 1,
                     "name": "onLoginButtonClicked",
                     "returnType": "void"
                 }

@@ -6,4 +6,9 @@ LoginPage 1.0 LoginPage.qml
 MyInput 1.0 MyInput.qml
 MyButton 1.0 MyButton.qml
 Footer 1.0 Footer.qml
+Test 1.0 Test.qml
+BasicChoicePage 1.0 BasicChoicePage.qml
+Header 1.0 Header.qml
+PageMain 1.0 PageMain.qml
+AppContainer 1.0 AppContainer.qml
 
