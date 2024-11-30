@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_apppensionCalculator_FILE /home/dimitris/dev/cpp/pensionCalculator/build/Desktop_Qt_6_8_0-Debug/apppensionCalculator)
-set(__QT_DEPLOY_TARGET_apppensionCalculator_TYPE EXECUTABLE)

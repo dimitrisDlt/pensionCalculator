@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/pensionCalculator">
-    <file alias="qmldir">/home/dimitris/dev/cpp/pensionCalculator/build/Desktop_Qt_6_8_0-Debug/pensionCalculator/qmldir</file>
-  </qresource>
-</RCC>
-
