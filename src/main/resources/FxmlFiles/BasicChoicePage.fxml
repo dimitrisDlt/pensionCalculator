@@ -5,10 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
-<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="1024.0" style="-fx-background-color: #E9EFEC;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" fx:controller="org.example.Controllers.BasicChoicePageController" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="1024.0" style="-fx-background-color: #E9EFEC;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label alignment="CENTER" maxHeight="70.0" maxWidth="1.7976931348623157E308" minHeight="70.0" style="-fx-background-color: #16423C;" text="1. ΕΠΙΛΟΓΗ ΕΙΔΟΥΣ ΥΠΟΛΟΓΙΣΜΟΥ ΣΥΝΤΑΞΗΣ." textAlignment="CENTER" textFill="WHITE" VBox.vgrow="ALWAYS">
+      <Label alignment="CENTER" maxHeight="70.0" maxWidth="1.7976931348623157E308" minHeight="70.0" style="-fx-background-color: #16423C; -fx-effect: dropshadow(gaussian , rgb(0,0,0), 10,0,0,1);" text="1. ΕΠΙΛΟΓΗ ΕΙΔΟΥΣ ΥΠΟΛΟΓΙΣΜΟΥ ΣΥΝΤΑΞΗΣ." textAlignment="CENTER" textFill="WHITE" VBox.vgrow="ALWAYS">
          <font>
             <Font name="System Bold" size="28.0" />
          </font>
@@ -22,12 +21,12 @@
          <center>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" text="ΣΥΝΤΟΜΟΣ ΥΠΟΛΟΓΙΣΜΟΣ">
+                  <Button fx:id="quickCalcButton" mnemonicParsing="false" onAction="#onQuickCalcButtonClicked" style="-fx-effect: dropshadow(gaussian , rgb(0,0,0), 10,0,0,1);" text="ΣΥΝΤΟΜΟΣ ΥΠΟΛΟΓΙΣΜΟΣ">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" text="ΑΝΑΛΥΤΙΚΟΣ ΥΠΟΛΟΓΙΣΜΟΣ">
+                  <Button fx:id="analyticalCalcButton" mnemonicParsing="false" onAction="#onAnalyticalCalcButtonClicked" style="-fx-effect: dropshadow(gaussian , rgb(0,0,0), 10,0,0,1);" text="ΑΝΑΛΥΤΙΚΟΣ ΥΠΟΛΟΓΙΣΜΟΣ">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>

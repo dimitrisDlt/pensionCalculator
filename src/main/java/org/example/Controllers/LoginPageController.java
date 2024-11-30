@@ -1,15 +1,16 @@
 package org.example.Controllers;
 
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.HBox;
 
 public class LoginPageController
 {
 
-    private boolean readyToContinue = false;
+    public BooleanProperty readyToContinue = new SimpleBooleanProperty(false);
 
     @FXML
     private TextField passwordInput;
@@ -26,8 +27,7 @@ public class LoginPageController
 
         if (correctPassword.equals(attemptedPassword))
         {
-            readyToContinue = true;
-            errorLabel.setText("Right");
+            readyToContinue.set(true);
             System.out.println("Right");
         }
         else
@@ -35,5 +35,6 @@ public class LoginPageController
             errorLabel.setText("Ο κωδικός που πληκτρολογήσατε είναι λανθασμένος.");
         }
     }
+
 
 }
