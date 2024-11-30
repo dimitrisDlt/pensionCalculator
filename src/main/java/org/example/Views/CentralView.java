@@ -1,6 +1,7 @@
 package org.example.Views;
 
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 
@@ -13,7 +14,7 @@ public class CentralView extends StackPane
     {
         FXMLLoader loader = new FXMLLoader();
 
-        AnchorPane loginPage;
+        HBox loginPage;
         VBox basicChoicePage;
 
         try {
@@ -21,7 +22,7 @@ public class CentralView extends StackPane
         }
         catch (IOException e)
         {
-            loginPage = new AnchorPane(new Label("The loginPage FXML file is wrong or null!"));
+            loginPage = new HBox(new Label("The loginPage FXML file is wrong or null!"));
             e.printStackTrace();
         }
 
@@ -36,6 +37,7 @@ public class CentralView extends StackPane
 
         this.getChildren().addAll(basicChoicePage, loginPage);
         this.setMinSize(1024, 596);
+        this.setAlignment(Pos.TOP_LEFT);
 
     }
 
