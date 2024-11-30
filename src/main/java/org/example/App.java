@@ -16,8 +16,7 @@ public class App extends Application
     {
         CentralController centralController = new CentralController();
 
-        var label = new Label("Hello, JavaFX " + ", running on Java " + ".");
-        var scene = new Scene(new StackPane(label), 640, 480);
+        Scene scene = new Scene(centralController.getCentralView(), 1024, 596);
         stage.setScene(scene);
         stage.show();
     }

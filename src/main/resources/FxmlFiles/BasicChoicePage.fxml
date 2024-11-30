@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="1024.0" style="-fx-background-color: #E9EFEC;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" maxHeight="70.0" maxWidth="1.7976931348623157E308" minHeight="70.0" style="-fx-background-color: #16423C;" text="1. ΕΠΙΛΟΓΗ ΕΙΔΟΥΣ ΥΠΟΛΟΓΙΣΜΟΥ ΣΥΝΤΑΞΗΣ." textAlignment="CENTER" textFill="WHITE" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label minHeight="70.0" text="Παρακαλώ επιλέξτε τον τρόπο υπολογισμού που επιθυμείτε για τη σύνταξή σας. Ο σύντομος υπολογισμός δέχεται μόνο τον μέσο όρο μηνιαίων αποδοχών από το έτος 2002 έως σήμερα, ενώ ο αναλυτικός υπολογισμός απαιτεί καταχώριση των επιμέρους στοιχείων αποδοχών." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <center>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" text="ΣΥΝΤΟΜΟΣ ΥΠΟΛΟΓΙΣΜΟΣ">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="ΑΝΑΛΥΤΙΚΟΣ ΥΠΟΛΟΓΙΣΜΟΣ">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </center>
+         <top>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <Pane prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <Pane prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+      <HBox alignment="CENTER" maxHeight="35.0" minHeight="35.0" prefHeight="35.0" prefWidth="200.0">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" text="Δημήτρης Νταλέτσος" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Copyright 2024" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="20.0" right="20.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</VBox>

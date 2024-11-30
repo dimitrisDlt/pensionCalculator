@@ -1,15 +1,31 @@
 package org.example.Controllers;
 
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
+import org.example.Views.CentralView;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class CentralController
 {
-    public LoginPageController getLoginPageController() {
-        return loginPageController;
+    private CentralView centralView;
+
+    public CentralController()
+    {
+
+        centralView = new CentralView();
+
     }
 
-    public void setLoginPageController(LoginPageController loginPageController) {
-        this.loginPageController = loginPageController;
+    public CentralView getCentralView() {
+        return centralView;
     }
 
-    private LoginPageController loginPageController;
+    public void setCentralView(CentralView centralView) {
+        this.centralView = centralView;
+    }
+
+
 
 }

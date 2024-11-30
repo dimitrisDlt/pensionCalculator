@@ -1,5 +1,42 @@
 package org.example.Views;
 
-public class CentralView
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Label;
+import javafx.scene.layout.*;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class CentralView extends StackPane
 {
+    public CentralView()
+    {
+        FXMLLoader loader = new FXMLLoader();
+
+        AnchorPane loginPage;
+        VBox basicChoicePage;
+
+        try {
+            loginPage = loader.load(getClass().getResource("/FxmlFiles/LoginPage.fxml"));
+        }
+        catch (IOException e)
+        {
+            loginPage = new AnchorPane(new Label("The loginPage FXML file is wrong or null!"));
+            e.printStackTrace();
+        }
+
+        try {
+            basicChoicePage = loader.load(getClass().getResource("/FxmlFiles/BasicChoicePage.fxml"));
+        }
+        catch (IOException e)
+        {
+            basicChoicePage = new VBox(new Label("The basicChoiceBox FXML file is wrong or null!"));
+            e.printStackTrace();
+        }
+
+        this.getChildren().addAll(basicChoicePage, loginPage);
+        this.setMinSize(1024, 596);
+
+    }
+
 }
