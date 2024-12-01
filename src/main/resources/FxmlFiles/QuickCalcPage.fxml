@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -47,19 +50,48 @@
                <font>
                   <Font size="14.0" />
                </font></Label>
-            <ChoiceBox fx:id="ageInput" maxWidth="150.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField maxWidth="150.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField fx:id="residenceYearsInput" maxWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ChoiceBox fx:id="ageInput" maxWidth="150.0" prefWidth="150.0" style="-fx-background-color: #16423C; -fx-text-fill: white;" stylesheets="@../CssFiles/ChoiceBox.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="arrow" />
+                  <String fx:value="choice-box" />
+               </styleClass></ChoiceBox>
+            <TextField fx:id="totalYearsInput" maxWidth="150.0" prefWidth="20.0" promptText="π.χ. 23" style="-fx-background-color: transparent; -fx-border-color: #16423C; -fx-border-width: 0 0 3 0; -fx-text-fill: #16423C;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="residenceYearsInput" maxWidth="150.0" promptText="π.χ. 67" styleClass="textfield" stylesheets="@../CssFiles/TextField.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
             <Label text="Μέσος όρος μηνιαίων αποδοχών από το 2002 έως σήμερα:" wrapText="true" GridPane.columnIndex="2">
                <font>
                   <Font size="14.0" />
                </font></Label>
-            <TextField maxWidth="150.0" GridPane.columnIndex="3" />
+            <TextField fx:id="medianSalaryInput" maxWidth="150.0" promptText="π.χ. 1000" styleClass="textfield" stylesheets="@../CssFiles/TextField.css" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
             <Label text="Συνολικά έτη παράλληλης ασφάλισης:" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font size="14.0" />
                </font></Label>
-            <ChoiceBox maxWidth="150.0" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="parallelYearsInput" maxWidth="150.0" prefWidth="150.0" stylesheets="@../CssFiles/ChoiceBox.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="choice-box" />
+                  <String fx:value="arrow" />
+               </styleClass>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ChoiceBox>
             <Label text="Ποσοστό εισφοράς παράλληλου φορέα ασφάλισης:" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font size="14.0" />
@@ -69,43 +101,90 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <CheckBox fx:id="disabilityCheckBox" mnemonicParsing="false" onAction="#onDisabilityCheckBoxChecked" GridPane.columnIndex="1" />
+            <CheckBox fx:id="disabilityCheckBox" mnemonicParsing="false" onAction="#onDisabilityCheckBoxChecked" stylesheets="@../CssFiles/Checkbox.css" GridPane.columnIndex="1">
+               <styleClass>
+                  <String fx:value="box" />
+                  <String fx:value="check-box" />
+               </styleClass>
+               <effect>
+                  <DropShadow />
+               </effect></CheckBox>
             <Label fx:id="disabilityPercentLabel" disable="true" text="Ποσοστό αναπηρίας:" GridPane.rowIndex="4">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ChoiceBox fx:id="disabilityPercentInput" disable="true" maxWidth="150.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="disabilityPercentInput" disable="true" maxWidth="150.0" prefWidth="150.0" stylesheets="@../CssFiles/ChoiceBox.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ChoiceBox>
             <Label text="Συνολικά έτη ασφάλισης από το 2002 έως σήμερα:" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <TextField maxWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <ChoiceBox maxWidth="150.0" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="posostoEisforasInput" maxWidth="150.0" promptText="π.χ. 20" styleClass="textfield" stylesheets="@../CssFiles/TextField.css" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
+            <ChoiceBox fx:id="totalYearsSince2002Input" maxWidth="150.0" prefWidth="150.0" stylesheets="@../CssFiles/ChoiceBox.css" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="choice-box" />
+                  <String fx:value="arrow" />
+               </styleClass>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ChoiceBox>
          </children>
          <padding>
             <Insets left="20.0" right="20.0" />
          </padding>
       </GridPane>
-      <VBox alignment="CENTER_RIGHT" maxHeight="80.0" minHeight="80.0" prefHeight="80.0" prefWidth="2000.0" VBox.vgrow="NEVER">
+      <HBox alignment="CENTER_RIGHT" minHeight="70.0" spacing="40.0" VBox.vgrow="NEVER">
          <children>
-            <Button fx:id="continueButton" alignment="CENTER" mnemonicParsing="false" onAction="#onContinueButtonClicked" prefWidth="200.0" style="-fx-effect: dropshadow(gaussian , rgb(0,0,0), 10,0,0,1);" text="ΣΥΝΕΧΕΙΑ" textAlignment="CENTER">
+            <Label fx:id="errorLabel" minHeight="50.0" prefWidth="2000.0" textAlignment="CENTER" textFill="RED" wrapText="true" HBox.hgrow="ALWAYS">
                <font>
-                  <Font name="System Bold" size="16.0" />
-               </font></Button>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <StackPane maxHeight="40.0" maxWidth="250.0">
+               <children>
+                  <Button maxHeight="40.0" maxWidth="200.0" minHeight="40.0" minWidth="200.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #E9EFEC; -fx-background-radius: 12; -fx-border-color: #16423C; -fx-border-width: 3; -fx-border-radius: 10; -fx-text-fill: #16423C; -fx-background-insets: 0 0 2 0;" text="ΣΥΝΕΧΕΙΑ">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="continueButton" alignment="CENTER" defaultButton="true" maxHeight="40.0" maxWidth="200.0" minHeight="40.0" minWidth="200.0" mnemonicParsing="false" onAction="#onContinueButtonClicked" onMouseEntered="#onContinueButtonHoverEnter" onMouseExited="#onContinueButtonHoverExit" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #16423C; -fx-text-fill: white; -fx-background-radius: 12; -fx-border-color: #16423C; -fx-border-width: 3; -fx-border-radius: 10;" text="ΣΥΝΕΧΕΙΑ" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </StackPane>
          </children>
          <padding>
-            <Insets right="50.0" />
+            <Insets left="60.0" right="60.0" />
          </padding>
-      </VBox>
-      <HBox alignment="CENTER" maxHeight="35.0" minHeight="35.0" prefHeight="35.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #16423C;" VBox.vgrow="ALWAYS">
          <children>
-            <Label prefWidth="2000.0" text="Δημήτρης Νταλέτσος" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+            <Label prefWidth="2000.0" text="Δημήτρης Νταλέτσος" textAlignment="CENTER" textFill="WHITE" HBox.hgrow="ALWAYS">
                <font>
                   <Font size="14.0" />
                </font></Label>
-            <Label alignment="CENTER_RIGHT" prefWidth="2000.0" text="Copyright 2024" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+            <Label alignment="CENTER_RIGHT" prefWidth="2000.0" text="Copyright 2024" textAlignment="CENTER" textFill="WHITE" HBox.hgrow="ALWAYS">
                <font>
                   <Font size="14.0" />
                </font></Label>
@@ -113,6 +192,9 @@
          <padding>
             <Insets left="20.0" right="20.0" />
          </padding>
+         <effect>
+            <DropShadow />
+         </effect>
       </HBox>
    </children>
 </VBox>
