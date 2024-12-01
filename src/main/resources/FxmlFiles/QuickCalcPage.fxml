@@ -69,13 +69,13 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <CheckBox fx:id="disabilityCheckBox" mnemonicParsing="false" GridPane.columnIndex="1" />
-            <Label fx:id="disabilityPercentLabel" text="Ποσοστό αναπηρίας:" GridPane.rowIndex="4">
+            <CheckBox fx:id="disabilityCheckBox" mnemonicParsing="false" onAction="#onDisabilityCheckBoxChecked" GridPane.columnIndex="1" />
+            <Label fx:id="disabilityPercentLabel" disable="true" text="Ποσοστό αναπηρίας:" GridPane.rowIndex="4">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ChoiceBox fx:id="disabilityPercentInput" maxWidth="150.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="disabilityPercentInput" disable="true" maxWidth="150.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label text="Συνολικά έτη ασφάλισης από το 2002 έως σήμερα:" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <font>
                   <Font size="14.0" />

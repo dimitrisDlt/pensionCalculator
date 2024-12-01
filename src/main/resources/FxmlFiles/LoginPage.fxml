@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
-<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="596.0" minWidth="1024.0" style="-fx-background-color: #E9EFEC;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.LoginPageController">
+<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="596.0" minWidth="1024.0" style="-fx-background-color: #C4DAD2;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.LoginPageController">
    <children>
-      <VBox alignment="TOP_CENTER" maxWidth="400.0" minWidth="400.0" prefHeight="200.0" prefWidth="400.0" spacing="20.0" style="-fx-background-color: #16423C;" HBox.hgrow="ALWAYS">
+      <VBox alignment="CENTER" maxWidth="400.0" minWidth="400.0" prefHeight="200.0" prefWidth="400.0" spacing="20.0" style="-fx-background-color: #16423C;" HBox.hgrow="ALWAYS">
          <effect>
             <DropShadow />
          </effect>
@@ -35,37 +35,70 @@
             <Insets />
          </HBox.margin>
          <padding>
-            <Insets left="20.0" right="20.0" top="150.0" />
+            <Insets left="20.0" right="20.0" />
          </padding>
       </VBox>
-      <VBox minWidth="1.0" prefHeight="200.0" prefWidth="1.0" style="-fx-background-color: rgba(22, 66, 60, 0);" HBox.hgrow="ALWAYS">
+      <VBox minWidth="1.0" prefHeight="200.0" prefWidth="1.0" style="-fx-background-color: linear-gradient(to bottom right, transparent, #E9EFEC);" HBox.hgrow="ALWAYS">
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="40.0" VBox.vgrow="ALWAYS">
                <children>
                   <Label text="Καλώς Ορίσατε!" textAlignment="CENTER">
                      <font>
-                        <Font name="System Italic" size="40.0" />
+                        <Font name="System Italic" size="44.0" />
                      </font>
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" height="4.89" radius="1.9449999999999998" width="4.89" />
+                     </effect>
                   </Label>
                   <Label text="Παρακαλώ εισάγετε τον κωδικό για να συνεχίσετε." textAlignment="CENTER">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="passwordInput" maxWidth="250.0" style="-fx-effect: dropshadow(gaussian , rgb(0,0,0), 10,0,0,1);" />
-                  <Label fx:id="errorLabel" text="Error" textAlignment="CENTER" textFill="RED">
+                  <StackPane>
+                     <children>
+                        <PasswordField maxHeight="40.0" maxWidth="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #16423C; -fx-border-style: solid; -fx-border-width: 0 0 4 0;" />
+                        <PasswordField fx:id="passwordInput" alignment="TOP_LEFT" maxHeight="40.0" maxWidth="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" promptText="Κωδικός.." style="-fx-background-color: transparent; -fx-text-fill: #16423C; -fx-border-style: solid; -fx-border-color: #16423C; -fx-border-width: 0 0 4 0; -fx-highlight-fill: #6A9C89;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </PasswordField>
+                     </children>
+                  </StackPane>
+                  <Label fx:id="errorLabel" maxWidth="400.0" minHeight="50.0" minWidth="400.0" textAlignment="CENTER" textFill="RED" wrapText="true">
                      <font>
                         <Font size="16.0" />
                      </font>
+                     <padding>
+                        <Insets left="30.0" right="30.0" />
+                     </padding>
                   </Label>
                   <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
                   <AnchorPane maxHeight="200.0" prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="loginButton" layoutX="366.0" layoutY="87.0" mnemonicParsing="false" onAction="#onLoginButtonClicked" style="-fx-effect: dropshadow(gaussian , rgb(0,0,0), 10,0,0,1);" text="ΕΙΣΟΔΟΣ" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="40.0">
-                           <font>
-                              <Font name="System Bold" size="17.0" />
-                           </font>
-                        </Button>
+                        <StackPane layoutX="477.0" layoutY="-3.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="40.0">
+                           <children>
+                              <Button maxHeight="40.0" maxWidth="200.0" minHeight="40.0" minWidth="200.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #E9EFEC; -fx-border-color: #16423C; -fx-border-width: 3; -fx-background-radius: 12; -fx-border-radius: 10; -fx-background-insets: 2;" text="ΕΙΣΟΔΟΣ" textFill="#16423c">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Button>
+                              <Button fx:id="loginButton" defaultButton="true" maxHeight="40.0" maxWidth="200.0" minHeight="40.0" minWidth="200.0" mnemonicParsing="false" onAction="#onLoginButtonClicked" onMouseEntered="#onLoginButtonHoverEnter" onMouseExited="#onLoginButtonHoverExit" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #16423C; -fx-background-radius: 12; -fx-border-width: 3; -fx-border-color: #16423C; -fx-border-radius: 10;" text="ΕΙΣΟΔΟΣ" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </StackPane>
                      </children>
                   </AnchorPane>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">

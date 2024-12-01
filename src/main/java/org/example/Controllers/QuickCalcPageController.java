@@ -30,4 +30,28 @@ public class QuickCalcPageController
         double result = contributoryPensionCalculator.getContributoryPensionCalculator(1000.00, 45);
         continueButton.setText(String.valueOf(result));
     }
+
+    @FXML
+    private void onDisabilityCheckBoxChecked()
+    {
+        if(disabilityCheckBox.isSelected())
+        {
+            ageLabel.setDisable(true);
+            ageInput.setDisable(true);
+            residenceYearsLabel.setDisable(true);
+            residenceYearsInput.setDisable(true);
+            disabilityPercentLabel.setDisable(false);
+            disabilityPercentInput.setDisable(false);
+        }
+        else
+        {
+            disabilityPercentLabel.setDisable(true);
+            disabilityPercentInput.setDisable(true);
+            ageLabel.setDisable(false);
+            ageInput.setDisable(false);
+            residenceYearsLabel.setDisable(false);
+            residenceYearsInput.setDisable(false);
+        }
+
+    }
 }
