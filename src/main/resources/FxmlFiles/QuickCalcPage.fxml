@@ -121,7 +121,7 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></ChoiceBox>
-            <Label text="Συνολικά έτη ασφάλισης από το 2002 έως σήμερα:" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <Label text="Συνολικά έτη ασφάλισης από το 2002 έως σήμερα:" visible="false" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <font>
                   <Font size="14.0" />
                </font>
@@ -130,7 +130,7 @@
                <font>
                   <Font name="System Bold" size="16.0" />
                </font></TextField>
-            <ChoiceBox fx:id="totalYearsSince2002Input" maxWidth="150.0" prefWidth="150.0" stylesheets="@../CssFiles/ChoiceBox.css" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <ChoiceBox fx:id="totalYearsSince2002Input" maxWidth="150.0" prefWidth="150.0" stylesheets="@../CssFiles/ChoiceBox.css" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <styleClass>
                   <String fx:value="choice-box" />
                   <String fx:value="arrow" />

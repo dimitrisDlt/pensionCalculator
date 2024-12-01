@@ -1,6 +1,8 @@
 package org.example.Controllers;
 
 import javafx.animation.FadeTransition;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -50,8 +52,16 @@ public class QuickCalcPageController implements Initializable
 
     private boolean isInputDataCorrect = true;
 
+    public BooleanProperty isReadyForResult = new SimpleBooleanProperty(false);
+    public BooleanProperty userWantsDisabilityCalculation = new SimpleBooleanProperty(false);
+
+    public int age, totalYears, residenceYears, disabilityPercentage, parallelYears = 0;
+    double medianSalary, posostoEisforas = 0;
+
+
     @FXML
-    public void onContinueButtonClicked() {
+    public void onContinueButtonClicked()
+    {
         //check input values first
         ArrayList<TextField> inputFields = new ArrayList<TextField>();
         inputFields.add(totalYearsInput);
@@ -90,9 +100,10 @@ public class QuickCalcPageController implements Initializable
                         isInputDataCorrect = false;
                 }
             }
+
         }
 
-        //convert null input to zero
+        //check if fields are null
 
 
         //if something is wrong
@@ -104,29 +115,54 @@ public class QuickCalcPageController implements Initializable
         {
             if(disabilityCheckBox.isSelected())
             {
-                double disabilityPercentage = disabilityPercentRange.get(disabilityPercentInput.getSelectionModel().getSelectedItem());
-                double totalEnsimaDouble = totalYearsInput.getText().isEmpty() ? 0 : Double.parseDouble(totalYearsInput.getText()) * 300;
-                int totalEnsima = (int) totalEnsimaDouble;
-                double medianSalary = medianSalaryInput.getText().isEmpty() ? 0 : Double.parseDouble(medianSalaryInput.getText());
-
-                NationalPensionCalculator nationalPensionCalculator = new NationalPensionCalculator();
-                ContributoryPensionCalculator contributoryPensionCalculator = new ContributoryPensionCalculator();
-                double nationalPensionResult = nationalPensionCalculator.getNationalPensionByDisability(disabilityPercentage, totalEnsima, 426.17);
-                double contriButoryPensionResult = contributoryPensionCalculator.getContributoryPensionCalculator(medianSalary, totalEnsima / 300);
+                //check null input fields
+                if(totalYearsInput.getText().isEmpty())
+                {
+                    errorLabel.setText("Πρέπει να καταχωρίσετε τον συνολικό χρόνο ασφάλισης για να προσχωρήσετε.");
+                }
+                else if (medianSalaryInput.getText().isEmpty()) {
+                    errorLabel.setText("Πρέπει να συμπληρώσετε έναν μέσο όρο αποδοχών για να προχωρήσετε.");
+                }
+                else
+                {
+                    if(posostoEisforasInput.getText().isEmpty())
+                    {
+                        posostoEisforasInput.setText("0");
+                    }
+                    double disabilityPercentage = disabilityPercentRange.get(disabilityPercentInput.getSelectionModel().getSelectedItem());
+                    totalYears = (int) (Double.parseDouble(totalYearsInput.getText()));
+                    medianSalary = Double.parseDouble(medianSalaryInput.getText());
+                    userWantsDisabilityCalculation.set(true);
+                    isReadyForResult.set(true);
+                }
             }
             else
             {
-                double residenceYearsDouble = residenceYearsInput.getText().isEmpty() ? 0 : Double.parseDouble(residenceYearsInput.getText());
-                int residenceYears = (int) residenceYearsDouble;
-                double totalEnsimaDouble = totalYearsInput.getText().isEmpty() ? 0 : Double.parseDouble(totalYearsInput.getText()) * 300;
-                int totalEnsima = (int) totalEnsimaDouble;
-                double medianSalary = medianSalaryInput.getText().isEmpty() ? 0 : Double.parseDouble(medianSalaryInput.getText());
-
-                NationalPensionCalculator nationalPensionCalculator = new NationalPensionCalculator();
-                ContributoryPensionCalculator contributoryPensionCalculator = new ContributoryPensionCalculator();
-                double nationalPensionResult = nationalPensionCalculator.getNationalPensionByAge(ageRange.get(ageInput.getSelectionModel().getSelectedItem()),
-                        0, residenceYears, totalEnsima, 426.17);
-                double contriButoryPensionResult = contributoryPensionCalculator.getContributoryPensionCalculator(medianSalary, totalEnsima / 300);
+                //check null input fields
+                if(totalYearsInput.getText().isEmpty())
+                {
+                    errorLabel.setText("Πρέπει να καταχωρίσετε τον συνολικό χρόνο ασφάλισης για να προσχωρήσετε.");
+                }
+                else if (medianSalaryInput.getText().isEmpty())
+                {
+                    errorLabel.setText("Πρέπει να συμπληρώσετε έναν μέσο όρο αποδοχών για να προχωρήσετε.");
+                }
+                else if (residenceYearsInput.getText().isEmpty())
+                {
+                    errorLabel.setText("Πρέπει να συμπληρώσετε τα συνολικά έτη διαμονής για να προχωρήσετε.");
+                }
+                else
+                {
+                    if(posostoEisforasInput.getText().isEmpty())
+                    {
+                        posostoEisforasInput.setText("0");
+                    }
+                    residenceYears = (int) Double.parseDouble(residenceYearsInput.getText());
+                    totalYears = (int) (Double.parseDouble(totalYearsInput.getText()));
+                    medianSalary = Double.parseDouble(medianSalaryInput.getText());
+                    userWantsDisabilityCalculation.set(false);
+                    isReadyForResult.set(true);
+                }
             }
 
         }

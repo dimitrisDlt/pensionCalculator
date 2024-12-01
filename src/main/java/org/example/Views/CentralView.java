@@ -18,17 +18,24 @@ import java.util.ArrayList;
 
 public class CentralView extends StackPane
 {
+    private FXMLLoader loginPageLoader;
+    private FXMLLoader basicChoicePageLoader;
+    private FXMLLoader quickCalcPageLoader;
+    private FXMLLoader simpleResultPageLoader;
+
     public CentralView()
     {
         //Create fxml loaders
 
-        FXMLLoader loginPageLoader = new FXMLLoader(getClass().getResource("/FxmlFiles/LoginPage.fxml"));
-        FXMLLoader basicChoicePageLoader = new FXMLLoader(getClass().getResource("/FxmlFiles/BasicChoicePage.fxml"));
-        FXMLLoader quickCalcPageLoader = new FXMLLoader(getClass().getResource("/FxmlFiles/QuickCalcPage.fxml"));
+        loginPageLoader = new FXMLLoader(getClass().getResource("/FxmlFiles/LoginPage.fxml"));
+        basicChoicePageLoader = new FXMLLoader(getClass().getResource("/FxmlFiles/BasicChoicePage.fxml"));
+        quickCalcPageLoader = new FXMLLoader(getClass().getResource("/FxmlFiles/QuickCalcPage.fxml"));
+        simpleResultPageLoader = new FXMLLoader(getClass().getResource("/FxmlFiles/SimpleResultPage.fxml"));
 
         HBox loginPage;
         VBox basicChoicePage;
         VBox quickCalcPage;
+        VBox simpleResultPage;
 
         try
         {
@@ -60,29 +67,24 @@ public class CentralView extends StackPane
             e.printStackTrace();
         }
 
-        this.getChildren().addAll(loginPage, basicChoicePage, quickCalcPage);
+        try
+        {
+            simpleResultPage = simpleResultPageLoader.load();
+        }
+        catch (IOException e)
+        {
+            simpleResultPage = new VBox(new Label("The loginPage FXML file is wrong or null!"));
+            e.printStackTrace();
+        }
+
+        this.getChildren().addAll(loginPage, basicChoicePage, quickCalcPage, simpleResultPage);
         this.getChildren().get(0).toFront();
         this.setMinSize(1024, 596);
         this.setAlignment(Pos.TOP_LEFT);
 
-        LoginPageController loginPageController = loginPageLoader.getController();
-        BasicChoicePageController basicChoicePageController = basicChoicePageLoader.getController();
-        QuickCalcPageController quickCalcPageController = quickCalcPageLoader.getController();
-
-
-        loginPageController.readyToContinue.addListener((observableValue, aBoolean, t1) ->
-        {
-            changeViews(0);
-        });
-
-        basicChoicePageController.quickCalculation.addListener(((observableValue, aBoolean, t1) ->
-        {
-            changeViews(0);
-        }));
-
     }
 
-    private void changeViews(int newIndex)
+    public void changeViews(int newIndex)
     {
         for (Node e: this.getChildren())
         {
@@ -109,4 +111,23 @@ public class CentralView extends StackPane
 
     }
 
+    public FXMLLoader getLoginPageLoader()
+    {
+        return loginPageLoader;
+    }
+
+    public FXMLLoader getBasicChoicePageLoader()
+    {
+        return basicChoicePageLoader;
+    }
+
+    public FXMLLoader getQuickCalcPageLoader()
+    {
+        return quickCalcPageLoader;
+    }
+
+    public FXMLLoader getSimpleResultPageLoader()
+    {
+        return simpleResultPageLoader;
+    }
 }

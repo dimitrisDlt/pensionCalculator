@@ -6,6 +6,12 @@ public class NationalPensionCalculator
     {
         double result = currentPension;
 
+        //Εάν τα ετη ασφάλισης είναι 40 και πάνω, καταβάλλεται ολόκληρη η σύνταξη
+        if (ensima >= 12000)
+        {
+            return result;
+        }
+
         if(ensima > 6000)
         {
             ensima = 6000;
@@ -37,6 +43,7 @@ public class NationalPensionCalculator
         {
             abidanceYears = 15;
         }
+
 
         //Μείωση λόγω ετών ασφάλισης
         result -= currentPension * (20 - ((ensima / 300) - (ensima % 300))) * 2 / 100;
@@ -96,5 +103,74 @@ public class NationalPensionCalculator
         return deadRelativePension * 0.70;
     }
 
+    public double getReductionByInsuranceYears(double pension, int ensima)
+    {
+        double result = pension;
 
+        if (ensima >= 12000)
+        {
+            return 0;
+        }
+
+        if(ensima > 6000)
+        {
+            ensima = 6000;
+        }
+
+        if(ensima < 4500)
+        {
+            ensima = 4500;
+        }
+
+        result -= pension * (20 - ((ensima / 300) - (ensima % 300))) * 2 / 100;
+
+        //Μικρή αύξηση λόγω αναλογίας μηνών - ημερών
+        result += pension * (ensima % 300) / 300 * 2 / 100;
+
+        return pension - result;
+
+    }
+
+    public double getReductionByResidenceYears(double pension, int residenceYears)
+    {
+        double result = pension;
+
+        if(residenceYears > 40)
+        {
+            residenceYears = 40;
+        }
+
+        if(residenceYears < 15)
+        {
+            residenceYears = 15;
+        }
+
+        result -= pension * (40 - residenceYears) / 40;
+
+        return pension - result;
+    }
+
+    public double getReductionByAge(double pension, int ageYears, int ageMonths)
+    {
+        double result = pension;
+        if(ageYears > 67 || (ageYears == 67 && ageMonths > 0))
+        {
+            ageYears = 67;
+            ageMonths = 0;
+        }
+
+        if(ageYears < 62)
+        {
+            ageYears = 62;
+            ageMonths = 0;
+        }
+
+        double tempResult = result;
+        result -= result * (67 - ageYears) * 6 / 100;
+
+        //Μικρή αύξηση λόγω αναλογίας μηνών
+        result += tempResult * ageMonths * 1 / 200;
+
+        return pension - result;
+    }
 }

@@ -39,7 +39,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label alignment="CENTER" prefWidth="9000.0" text="Εθνική Σύνταξη" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" />
+            <Label fx:id="nationalPensionTitle" alignment="CENTER" prefWidth="9000.0" text="Εθνική Σύνταξη" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" />
             <Label alignment="CENTER" prefWidth="9000.0" text="Ανταποδοτική Σύνταξη" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" />
             <Label text="Πλήρες ποσό εθνικής σύνταξης:" GridPane.rowIndex="1" />
             <Label text="426,17" GridPane.columnIndex="1" GridPane.rowIndex="1" />
@@ -52,17 +52,20 @@
             <Label text="Ποσοστό αναπλήρωσης:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
             <Label text="Προσαύξηση ποσοστού αναπλήρωσης λόγω παράλληλς ασφάλισης:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
             <Label text="Αποτέλεσμα:" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label fx:id="resultWorkYearsDecreaseLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="resultResidenceDecreaseLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="resultAgeDereaseLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="resultNationalPensionLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="resultMedianSalaryLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="resultTotalYearsLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="resultPosostoAnaplirosisLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label fx:id="resultParallelAdditionLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label fx:id="resultContribPensionLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="5" />
          </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
       </GridPane>
-      <Label text="Συνολικό ποσό κύριας σύνταξης: 1000€ (500€ η εθνική και 500€ η ανταποδοτική σύνταξη." />
+      <Label fx:id="resultLabel" text="Συνολικό ποσό κύριας σύνταξης: 1000€ (500€ η εθνική και 500€ η ανταποδοτική σύνταξη." />
    </children>
 </VBox>
