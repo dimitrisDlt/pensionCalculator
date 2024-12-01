@@ -41,6 +41,13 @@
                         <!-- Usage: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
+                            <stripDebug>true</stripDebug>
+                            <compress>2</compress>
+                            <noHeaderFiles>true</noHeaderFiles>
+                            <noManPages>true</noManPages>
+                            <launcher>Application</launcher>
+                            <jlinkImageName>pensionCalculator</jlinkImageName>
+                            <jlinkZipName>pensionCalculatorZip</jlinkZipName>
                             <mainClass>org.example.Main</mainClass>
                         </configuration>
                     </execution>
