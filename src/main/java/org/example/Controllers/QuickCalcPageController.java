@@ -52,6 +52,8 @@ public class QuickCalcPageController implements Initializable
 
     private boolean isInputDataCorrect = true;
 
+    ArrayList<TextField> inputFields = new ArrayList<TextField>();
+
     public BooleanProperty isReadyForResult = new SimpleBooleanProperty(false);
     public BooleanProperty userWantsDisabilityCalculation = new SimpleBooleanProperty(false);
 
@@ -62,14 +64,14 @@ public class QuickCalcPageController implements Initializable
     @FXML
     public void onContinueButtonClicked()
     {
-        //check input values first
-        ArrayList<TextField> inputFields = new ArrayList<TextField>();
-        inputFields.add(totalYearsInput);
-        inputFields.add(residenceYearsInput);
-        inputFields.add(medianSalaryInput);
-        inputFields.add(posostoEisforasInput);
+        //System.out.println("Clicked");
 
-        for (TextField field : inputFields) {
+        //check input values first
+
+        for (TextField field : inputFields)
+        {
+            field.setText(field.getText().replace(',', '.'));
+
             for (int i = 0; i < field.getText().length(); i++) {
                 char c = field.getText().charAt(i);
                 switch (c) {
@@ -93,8 +95,7 @@ public class QuickCalcPageController implements Initializable
                         break;
                     case '9':
                         break;
-                    case ',':
-                        c = '.';
+                    case '.':
                         break;
                     default:
                         isInputDataCorrect = false;
@@ -118,7 +119,7 @@ public class QuickCalcPageController implements Initializable
                 //check null input fields
                 if(totalYearsInput.getText().isEmpty())
                 {
-                    errorLabel.setText("Πρέπει να καταχωρίσετε τον συνολικό χρόνο ασφάλισης για να προσχωρήσετε.");
+                    errorLabel.setText("Πρέπει να καταχωρίσετε τον συνολικό χρόνο ασφάλισης για να προχωρήσετε.");
                 }
                 else if (medianSalaryInput.getText().isEmpty()) {
                     errorLabel.setText("Πρέπει να συμπληρώσετε έναν μέσο όρο αποδοχών για να προχωρήσετε.");
@@ -141,7 +142,7 @@ public class QuickCalcPageController implements Initializable
                 //check null input fields
                 if(totalYearsInput.getText().isEmpty())
                 {
-                    errorLabel.setText("Πρέπει να καταχωρίσετε τον συνολικό χρόνο ασφάλισης για να προσχωρήσετε.");
+                    errorLabel.setText("Πρέπει να καταχωρίσετε τον συνολικό χρόνο ασφάλισης για να προχωρήσετε.");
                 }
                 else if (medianSalaryInput.getText().isEmpty())
                 {
@@ -168,6 +169,7 @@ public class QuickCalcPageController implements Initializable
 
         }
 
+        isInputDataCorrect = true;
     }
 
 
@@ -259,6 +261,11 @@ public class QuickCalcPageController implements Initializable
         }
 
         totalYearsSince2002Input.setValue(1);
+
+        inputFields.add(totalYearsInput);
+        inputFields.add(residenceYearsInput);
+        inputFields.add(medianSalaryInput);
+        inputFields.add(posostoEisforasInput);
     }
 
     @FXML

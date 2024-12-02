@@ -18,6 +18,9 @@
          <font>
             <Font size="14.0" />
          </font>
+         <padding>
+            <Insets left="40.0" right="40.0" />
+         </padding>
       </Label>
       <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
          <center>
@@ -43,7 +46,7 @@
                         </Button>
                      </children>
                   </StackPane>
-                  <StackPane>
+                  <StackPane disable="true">
                      <children>
                         <Button maxHeight="40.0" maxWidth="270.0" minHeight="40.0" minWidth="270.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: #E9EFEC; -fx-background-radius: 12; -fx-border-color: #16423C; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-insets: 0 0 2 0;" text="ΑΝΑΛΥΤΙΚΟΣ ΥΠΟΛΟΓΙΣΜΟΣ">
                            <font>

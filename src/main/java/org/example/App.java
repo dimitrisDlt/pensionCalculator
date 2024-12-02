@@ -3,6 +3,7 @@ package org.example;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import org.example.Controllers.*;
@@ -18,6 +19,7 @@ public class App extends Application
 
         Scene scene = new Scene(centralController.getCentralView(), 1024, 596);
         stage.setScene(scene);
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/ImageFiles/logo.png")));
         stage.show();
     }
 

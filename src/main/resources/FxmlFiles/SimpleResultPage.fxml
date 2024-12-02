@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="596.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.SimpleResultPageController">
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="596.0" prefWidth="1024.0" style="-fx-background-color: radial-gradient(focus-angle 45deg, focus-distance 20%, center 50% 50%, radius 50%, reflect, #E9EFEC, #C4DAD2);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.SimpleResultPageController">
    <children>
       <Label alignment="CENTER" maxHeight="60.0" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="9000.0" style="-fx-background-color: #16423C;" text="ΑΠΟΤΕΛΕΣΜΑ." textFill="WHITE" VBox.vgrow="ALWAYS">
          <font>
@@ -17,17 +17,20 @@
          </effect></Label>
       <Label maxHeight="100.0" maxWidth="1.7976931348623157E308" minHeight="100.0" prefHeight="100.0" prefWidth="9000.0" text="Το ποσό της κύριας σύνταξης αποτελείται από δύο μέρη, την εθνική και ανταποδοτική σύνταξη. Η εθνική σύνταξη καταβάλλεται από το κράτος και αποτελεί ένα προκαθορισμένο εκ του νόμου ποσό, το οποίο υφίσταται μειώσεις ανάλογα με την ηλικία, τα έτη ασφάλισης και τα έτη νόμιμης διαμονής. Η ανταποδοτική σύνταξη καθορίζεται από το ύψος των συνολικών αποδοχών του ασφαλισμένου, σε συνάρτηση με τον συνολικό χρόνο ασφάλισης." textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
          <font>
-            <Font size="14.0" />
+            <Font name="System Italic" size="14.0" />
          </font>
          <VBox.margin>
             <Insets left="30.0" right="30.0" />
          </VBox.margin>
+         <effect>
+            <Glow level="0.38" />
+         </effect>
       </Label>
-      <GridPane>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
@@ -39,33 +42,122 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label fx:id="nationalPensionTitleLabel" alignment="CENTER" prefWidth="9000.0" text="Εθνική Σύνταξη" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" />
-            <Label alignment="CENTER" prefWidth="9000.0" text="Ανταποδοτική Σύνταξη" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" />
-            <Label text="Πλήρες ποσό εθνικής σύνταξης:" GridPane.rowIndex="1" />
-            <Label text="426,17" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label text="Μείωση λόγω ετών ασφάλισης (λιγότερα από 20):" GridPane.rowIndex="2" />
-            <Label fx:id="baladerAssignLabel" text="Μείωση λόγω ετών διαμονής στην Ελλάδα (λιγότερα από 40):" GridPane.rowIndex="3" />
-            <Label fx:id="decreaseByAgeAssignLabel" text="Μείωση λόγω ηλικίας (μικρότερη των 67):" GridPane.rowIndex="4" />
-            <Label text="Αποτέλεσμα:" GridPane.rowIndex="5" />
-            <Label text="Μέσος όρος αποδοχών:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Label text="Συνολικός χρόνος ασφάλισης:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Label text="Ποσοστό αναπλήρωσης:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label text="Προσαύξηση ποσοστού αναπλήρωσης λόγω παράλληλς ασφάλισης:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label text="Αποτέλεσμα:" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Label fx:id="resultWorkYearsDecreaseLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label fx:id="baladerDecreaseLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label fx:id="resultAgeDereaseLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="resultNationalPensionLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label fx:id="resultMedianSalaryLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Label fx:id="resultTotalYearsLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Label fx:id="resultPosostoAnaplirosisLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Label fx:id="resultParallelAdditionLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Label fx:id="resultContribPensionLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label fx:id="nationalPensionTitleLabel" alignment="CENTER" prefWidth="9000.0" text="Εθνική Σύνταξη" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefWidth="9000.0" text="Ανταποδοτική Σύνταξη" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></Label>
+            <Label text="Πλήρες ποσό εθνικής σύνταξης:" wrapText="true" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="426,17€" textFill="#16423c" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label text="Μείωση λόγω ετών ασφάλισης (λιγότερα από 20):" wrapText="true" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="baladerAssignLabel" text="Μείωση λόγω ετών διαμονής στην Ελλάδα (λιγότερα από 40):" wrapText="true" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="decreaseByAgeAssignLabel" text="Μείωση λόγω ηλικίας (μικρότερη των 67):" wrapText="true" GridPane.rowIndex="4">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="Αποτέλεσμα:" GridPane.rowIndex="5">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="Μέσος όρος αποδοχών:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="Συνολικός χρόνος ασφάλισης:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="Ποσοστό αναπλήρωσης:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="Προσαύξηση ποσοστού αναπλήρωσης λόγω παράλληλς ασφάλισης:" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label text="Αποτέλεσμα:" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="resultWorkYearsDecreaseLabel" text="Label" textFill="#16423c" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="baladerDecreaseLabel" text="Label" textFill="#16423c" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="resultAgeDereaseLabel" text="Label" textFill="#16423c" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="resultNationalPensionLabel" text="Label" textFill="#16423c" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="resultMedianSalaryLabel" text="Label" textFill="#16423c" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="resultTotalYearsLabel" text="Label" textFill="#16423c" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="resultPosostoAnaplirosisLabel" text="Label" textFill="#16423c" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="resultParallelAdditionLabel" text="Label" textFill="#16423c" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="resultContribPensionLabel" text="Label" textFill="#16423c" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
          </children>
          <padding>
-            <Insets left="20.0" right="20.0" />
+            <Insets left="40.0" right="40.0" />
          </padding>
       </GridPane>
-      <Label fx:id="resultLabel" text="Συνολικό ποσό κύριας σύνταξης: 1000€ (500€ η εθνική και 500€ η ανταποδοτική σύνταξη." />
+      <Label fx:id="resultLabel" alignment="CENTER" maxHeight="70.0" minHeight="40.0" prefHeight="40.0" prefWidth="9000.0" text="Συνολικό ποσό κύριας σύνταξης: 1000€ (500€ η εθνική και 500€ η ανταποδοτική σύνταξη." textAlignment="CENTER" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <HBox alignment="CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="9000.0" style="-fx-background-color: #16423C;" VBox.vgrow="ALWAYS">
+         <children>
+            <Label prefWidth="9000.0" text="Δημήτρης Νταλέτσος" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefWidth="9000.0" text="Copyright © 2024" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <padding>
+            <Insets left="40.0" right="40.0" />
+         </padding>
+      </HBox>
    </children>
 </VBox>

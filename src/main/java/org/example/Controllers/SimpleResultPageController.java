@@ -55,20 +55,23 @@ public class SimpleResultPageController implements Initializable
 
     public void setElements()
     {
+        double result = 0;
+
         if (userWantsDisabilityCalculation)
         {
             nationalPensionTitleLabel.setText("Εθνική Σύνταξη (Αναπηρίας)");
             double currentPension = 426.17;
             double workYearsReduction = nationalPensionCalculator.getReductionByInsuranceYears(currentPension, nationalPensionData.getEnsima());
             double pensionReducedByWorkYears = currentPension - workYearsReduction;
-            resultWorkYearsDecreaseLabel.setText("-" + String.valueOf(workYearsReduction) + "€");
+            resultWorkYearsDecreaseLabel.setText("-" + String.format("%.2f", workYearsReduction) + "€");
             baladerAssignLabel.setText("Μείωση λόγω ποσοστού αναπηρίας");
             double disabilityReduction = nationalPensionCalculator.getReductionByDisabilityPercentage(pensionReducedByWorkYears, nationalPensionData.getDisabilityPercentage());
             double pensionReducedByDisability = pensionReducedByWorkYears - disabilityReduction;
-            baladerDecreaseLabel.setText("-" + disabilityReduction + "€");
+            baladerDecreaseLabel.setText("-" + String.format("%.2f", disabilityReduction) + "€");
             resultAgeDereaseLabel.setVisible(false);
             decreaseByAgeAssignLabel.setVisible(false);
-            resultNationalPensionLabel.setText(String.valueOf(pensionReducedByDisability) + "€");
+            resultNationalPensionLabel.setText(String.format("%.2f", pensionReducedByDisability) + "€");
+            result += pensionReducedByDisability;
         }
         else
         {
@@ -77,27 +80,33 @@ public class SimpleResultPageController implements Initializable
             double workYearsReduction = nationalPensionCalculator.getReductionByInsuranceYears(currentPension, nationalPensionData.getEnsima());
             double pensionReducedByWorkYears = currentPension - workYearsReduction;
 
-            resultWorkYearsDecreaseLabel.setText("-" + String.valueOf(workYearsReduction) + "€");
+            resultWorkYearsDecreaseLabel.setText("-" + String.format("%.2f", workYearsReduction) + "€");
             baladerAssignLabel.setText("Μείωση λόγω ετών διαμονής:");
             double residenceYearsReduction = nationalPensionCalculator.getReductionByResidenceYears(pensionReducedByWorkYears, nationalPensionData.getResidenceYears());
 
             double pensionReducedByResidenceYears = pensionReducedByWorkYears - residenceYearsReduction;
-            baladerDecreaseLabel.setText("-" + residenceYearsReduction + "€");
+            baladerDecreaseLabel.setText("-" + String.format("%.2f", residenceYearsReduction) + "€");
             double ageReduction = nationalPensionCalculator.getReductionByAge(pensionReducedByResidenceYears, nationalPensionData.getAgeYears(), nationalPensionData.getAgeMonths());
             double pensionReducedByAge = pensionReducedByResidenceYears - ageReduction;
             System.out.println(nationalPensionData.getAgeYears());
             System.out.println(nationalPensionData.getAgeMonths());
             System.out.println(ageReduction);
             System.out.println(pensionReducedByAge);
-            resultAgeDereaseLabel.setText("-" + ageReduction + "€");
-            resultNationalPensionLabel.setText(String.valueOf(pensionReducedByAge) + "€");
+            resultAgeDereaseLabel.setText("-" + String.format("%.2f", ageReduction) + "€");
+            resultNationalPensionLabel.setText(String.format("%.2f", pensionReducedByAge) + "€");
+            result += pensionReducedByAge;
         }
 
-        resultMedianSalaryLabel.setText(String.valueOf(contributoryPensionData.getMedianSalary()) + "€");
-        resultTotalYearsLabel.setText(String.valueOf(contributoryPensionData.getEtiAsfalisis()) + "€");
-        resultPosostoAnaplirosisLabel.setText(String.valueOf(contributoryPensionCalculator.getPosostaAnaplirosis().get(contributoryPensionData.getEtiAsfalisis())));
-        resultContribPensionLabel.setText(String.valueOf(contributoryPensionCalculator.getContributoryPensionCalculator(contributoryPensionData.getMedianSalary(),
+        resultMedianSalaryLabel.setText(String.format("%.2f", contributoryPensionData.getMedianSalary()) + "€");
+        resultTotalYearsLabel.setText(String.valueOf(contributoryPensionData.getEtiAsfalisis()) + " έτη.");
+        resultPosostoAnaplirosisLabel.setText(String.format("%.2f", contributoryPensionCalculator.getPosostaAnaplirosis().get(contributoryPensionData.getEtiAsfalisis())) + "%");
+        resultParallelAdditionLabel.setText("+0%");
+        resultContribPensionLabel.setText(String.format("%.2f", contributoryPensionCalculator.getContributoryPensionCalculator(contributoryPensionData.getMedianSalary(),
                 contributoryPensionData.getEtiAsfalisis())) + "€");
+
+        result += contributoryPensionCalculator.getContributoryPensionCalculator(contributoryPensionData.getMedianSalary(), contributoryPensionData.getEtiAsfalisis());
+
+        resultLabel.setText("Συνολικό ποσό κύριας σύνταξης: " + String.format("%.2f", result) + "€" + " (" + resultNationalPensionLabel.getText() + " η εθνική και " + resultContribPensionLabel.getText() + " η ανταποδοτική σύνταξη).");
     }
 
     public NationalPensionData getNationalPensionData()
