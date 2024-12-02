@@ -49,6 +49,7 @@ public class CentralController
             simpleResultPageController.getContributoryPensionData().setDataSimple(quickCalcPageController.medianSalary,
                     quickCalcPageController.totalYears * 300, quickCalcPageController.parallelYears, quickCalcPageController.posostoEisforas);
 
+            simpleResultPageController.setElements();
             centralView.changeViews(0);
         });
 

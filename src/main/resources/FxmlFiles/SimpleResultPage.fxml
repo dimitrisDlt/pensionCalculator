@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="596.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="596.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.SimpleResultPageController">
    <children>
       <Label alignment="CENTER" maxHeight="60.0" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="9000.0" style="-fx-background-color: #16423C;" text="ΑΠΟΤΕΛΕΣΜΑ." textFill="WHITE" VBox.vgrow="ALWAYS">
          <font>
@@ -39,13 +39,13 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label fx:id="nationalPensionTitle" alignment="CENTER" prefWidth="9000.0" text="Εθνική Σύνταξη" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" />
+            <Label fx:id="nationalPensionTitleLabel" alignment="CENTER" prefWidth="9000.0" text="Εθνική Σύνταξη" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" />
             <Label alignment="CENTER" prefWidth="9000.0" text="Ανταποδοτική Σύνταξη" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" />
             <Label text="Πλήρες ποσό εθνικής σύνταξης:" GridPane.rowIndex="1" />
             <Label text="426,17" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="Μείωση λόγω ετών ασφάλισης (λιγότερα από 20):" GridPane.rowIndex="2" />
-            <Label text="Μείωση λόγω ετών διαμονής στην Ελλάδα (λιγότερα από 40):" GridPane.rowIndex="3" />
-            <Label text="Μείωση λόγω ηλικίας (μικρότερη των 67):" GridPane.rowIndex="4" />
+            <Label fx:id="baladerAssignLabel" text="Μείωση λόγω ετών διαμονής στην Ελλάδα (λιγότερα από 40):" GridPane.rowIndex="3" />
+            <Label fx:id="decreaseByAgeAssignLabel" text="Μείωση λόγω ηλικίας (μικρότερη των 67):" GridPane.rowIndex="4" />
             <Label text="Αποτέλεσμα:" GridPane.rowIndex="5" />
             <Label text="Μέσος όρος αποδοχών:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <Label text="Συνολικός χρόνος ασφάλισης:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
@@ -53,7 +53,7 @@
             <Label text="Προσαύξηση ποσοστού αναπλήρωσης λόγω παράλληλς ασφάλισης:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
             <Label text="Αποτέλεσμα:" GridPane.columnIndex="2" GridPane.rowIndex="5" />
             <Label fx:id="resultWorkYearsDecreaseLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label fx:id="resultResidenceDecreaseLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="baladerDecreaseLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label fx:id="resultAgeDereaseLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label fx:id="resultNationalPensionLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <Label fx:id="resultMedianSalaryLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />

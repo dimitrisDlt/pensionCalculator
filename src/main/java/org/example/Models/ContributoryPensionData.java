@@ -8,6 +8,7 @@ public class ContributoryPensionData
     private int ensima = 0;
     private int parallelYears = 0;
     private double posostoExtraEisforas = 0;
+    private int etiAsfalisis = 0;
 
     public void setDataSimple(double medianSalary, int ensima, int parallelYears, double posostoExtraEisforas)
     {
@@ -15,6 +16,7 @@ public class ContributoryPensionData
         this.ensima = ensima;
         this.parallelYears = parallelYears;
         this.posostoExtraEisforas = posostoExtraEisforas;
+        this.etiAsfalisis = ensima / 300;
     }
 
     public double getAllIncomeSince2002()
@@ -46,4 +48,10 @@ public class ContributoryPensionData
     {
         return posostoExtraEisforas;
     }
+
+    public int getEtiAsfalisis()
+    {
+        return etiAsfalisis;
+    }
+
 }

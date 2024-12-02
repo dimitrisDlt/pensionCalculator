@@ -173,4 +173,30 @@ public class NationalPensionCalculator
 
         return pension - result;
     }
+
+    public double getReductionByDisabilityPercentage(double pension, double disabilityPercentage)
+    {
+        double result = pension;
+
+        switch ((0 <= disabilityPercentage && disabilityPercentage < 50) ? 1 :
+                (50 <= disabilityPercentage && disabilityPercentage < 67) ? 2 :
+                        (67 <= disabilityPercentage && disabilityPercentage < 80) ? 3 : 4)
+        {
+            case 1:
+                result = 0;
+                break;
+            case 2:
+                result /= 2;
+                break;
+            case 3:
+                result *= 0.75;
+                break;
+            case 4:
+                break;
+            default:
+                result = 99.3333;
+        }
+
+        return pension - result;
+    }
 }

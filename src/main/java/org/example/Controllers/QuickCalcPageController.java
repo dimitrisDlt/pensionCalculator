@@ -129,7 +129,7 @@ public class QuickCalcPageController implements Initializable
                     {
                         posostoEisforasInput.setText("0");
                     }
-                    double disabilityPercentage = disabilityPercentRange.get(disabilityPercentInput.getSelectionModel().getSelectedItem());
+                    disabilityPercentage = disabilityPercentRange.get(disabilityPercentInput.getSelectionModel().getSelectedItem());
                     totalYears = (int) (Double.parseDouble(totalYearsInput.getText()));
                     medianSalary = Double.parseDouble(medianSalaryInput.getText());
                     userWantsDisabilityCalculation.set(true);
@@ -159,6 +159,7 @@ public class QuickCalcPageController implements Initializable
                     }
                     residenceYears = (int) Double.parseDouble(residenceYearsInput.getText());
                     totalYears = (int) (Double.parseDouble(totalYearsInput.getText()));
+                    age = ageRange.get(ageInput.getSelectionModel().getSelectedItem());
                     medianSalary = Double.parseDouble(medianSalaryInput.getText());
                     userWantsDisabilityCalculation.set(false);
                     isReadyForResult.set(true);
