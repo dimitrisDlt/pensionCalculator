@@ -1,4 +1,4 @@
-package org.example.Controllers;
+package pensionCalculator.Controllers;
 
 import javafx.animation.FadeTransition;
 import javafx.beans.property.BooleanProperty;
@@ -7,8 +7,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.util.Duration;
-import org.example.Core.ContributoryPensionCalculator;
-import org.example.Core.NationalPensionCalculator;
 
 import java.net.URL;
 import java.util.ArrayList;

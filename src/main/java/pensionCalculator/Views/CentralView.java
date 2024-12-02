@@ -1,20 +1,14 @@
-package org.example.Views;
+package pensionCalculator.Views;
 
 import javafx.animation.FadeTransition;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 import javafx.util.Duration;
-import org.example.Controllers.BasicChoicePageController;
-import org.example.Controllers.LoginPageController;
-import org.example.Controllers.QuickCalcPageController;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class CentralView extends StackPane
 {

@@ -28,9 +28,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
-                    <release>11</release>
-                    <source>14</source>
-                    <target>14</target>
+                    <release>17</release>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -50,10 +50,26 @@
                             <launcher>Application</launcher>
                             <jlinkImageName>pensionCalculator</jlinkImageName>
                             <jlinkZipName>pensionCalculatorZip</jlinkZipName>
-                            <mainClass>org.example.Main</mainClass>
+                            <mainClass>pensionCalculator.Main</mainClass>
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.panteleyev</groupId>
+                <artifactId>jpackage-maven-plugin</artifactId>
+                <version>1.4.0</version>
+                <configuration>
+                    <name>PensionCalculator</name>
+                    <appVersion>0.0.2</appVersion>
+                    <vendor>Dimitris Daletsos</vendor>
+                    <destination>target/dist</destination>
+                    <runtimeImage>target/pensionCalculator</runtimeImage>
+                    <module>pensionCalculator/pensionCalculator.Main</module>
+                    <icon>src/main/resources/ImageFiles/money-bills-solid.ico</icon>
+                    <type>MSI</type>
+                    <winDirChooser>true</winDirChooser>
+                </configuration>
             </plugin>
         </plugins>
     </build>

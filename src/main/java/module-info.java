@@ -1,7 +1,7 @@
-module org.example {
+module pensionCalculator {
     requires javafx.controls;
     requires javafx.fxml;
-    exports org.example;
-    exports org.example.Controllers;
-    opens org.example.Controllers to javafx.fxml;
+    exports pensionCalculator;
+    exports pensionCalculator.Controllers;
+    opens pensionCalculator.Controllers to javafx.fxml;
 }

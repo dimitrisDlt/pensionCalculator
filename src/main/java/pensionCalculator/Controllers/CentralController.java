@@ -1,11 +1,6 @@
-package org.example.Controllers;
+package pensionCalculator.Controllers;
 
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.GridPane;
-import org.example.Views.CentralView;
-
-import java.util.ArrayList;
-import java.util.Collection;
+import pensionCalculator.Views.CentralView;
 
 public class CentralController
 {

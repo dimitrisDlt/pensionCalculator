@@ -1,12 +1,12 @@
-package org.example.Controllers;
+package pensionCalculator.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import org.example.Core.ContributoryPensionCalculator;
-import org.example.Core.NationalPensionCalculator;
-import org.example.Models.ContributoryPensionData;
-import org.example.Models.NationalPensionData;
+import pensionCalculator.Core.ContributoryPensionCalculator;
+import pensionCalculator.Core.NationalPensionCalculator;
+import pensionCalculator.Models.ContributoryPensionData;
+import pensionCalculator.Models.NationalPensionData;
 
 import java.net.URL;
 import java.util.ResourceBundle;

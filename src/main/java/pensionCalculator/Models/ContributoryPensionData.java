@@ -1,4 +1,4 @@
-package org.example.Models;
+package pensionCalculator.Models;
 
 public class ContributoryPensionData
 {

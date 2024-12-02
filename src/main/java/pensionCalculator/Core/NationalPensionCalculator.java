@@ -1,4 +1,4 @@
-package org.example.Core;
+package pensionCalculator.Core;
 
 public class NationalPensionCalculator
 {

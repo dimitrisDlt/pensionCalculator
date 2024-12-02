@@ -1,4 +1,4 @@
-package org.example.Models;
+package pensionCalculator.Models;
 
 import java.util.HashMap;
 

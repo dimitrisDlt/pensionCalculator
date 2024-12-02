@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="596.0" prefWidth="1024.0" style="-fx-background-color: #E9EFEC;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.QuickCalcPageController">
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="596.0" prefWidth="1024.0" style="-fx-background-color: #E9EFEC;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pensionCalculator.Controllers.QuickCalcPageController">
    <children>
       <Label alignment="CENTER" maxHeight="70.0" minHeight="70.0" prefWidth="2000.0" style="-fx-background-color: #16423C; -fx-effect: dropshadow(gaussian , rgb(0,0,0), 10,0,0,1);" text="2. ΕΙΣΑΓΩΓΗ ΣΤΟΙΧΕΙΩΝ ΥΠΟΛΟΓΙΣΜΟΥ." textAlignment="CENTER" textFill="WHITE" VBox.vgrow="ALWAYS">
          <font>

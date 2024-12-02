@@ -1,6 +1,6 @@
-package org.example.Core;
+package pensionCalculator.Core;
 
-import org.example.Models.PosostaAnaplirosis;
+import pensionCalculator.Models.PosostaAnaplirosis;
 
 import java.util.HashMap;
 
